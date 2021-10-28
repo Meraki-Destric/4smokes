@@ -4,16 +4,16 @@
       <p id="notice"><%= notice %></p>
       <h1>Community</h1>
       <table>
-        <%# if user_signed_in? %>
-        <div class="card-body">
-          <p class="image is-64x64">
-            <img src="https://bulma.io/images/placeholders/64x64.png" style="border-radius: 50%">
-          </p>
-          <h5 class="card-title"><%#= current_user.name%></h5>
-          <h6 class="card-subtitle mb-2 text-muted">@<%#= current_user.username %></h6>
-          <%= render "posts/form"%>
-        </div>
-        <%# end%>
+        <% if user_signed_in? %>
+          <div class="card-body">
+            <p class="image is-64x64">
+              <img src="https://bulma.io/images/placeholders/64x64.png" style="border-radius: 50%">
+            </p>
+            <h5 class="card-title"><%= current_user.name%></h5>
+            <h6 class="card-subtitle mb-2 text-muted">@<%= current_user.username %></h6>
+            <%= render "posts/form"%>
+          </div>
+        <% end%>
         <br>
         <%= render "posts/feed"%>
       </table>
