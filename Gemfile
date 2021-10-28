@@ -29,6 +29,16 @@ gem "jbuilder", "~> 2.7"
 gem "bootsnap", ">= 1.4.4", require: false
 gem "devise", "~> 4.8"
 gem "simple_form", "~> 5.1"
+gem "carrierwave", "~> 2.2", ">= 2.2.2"
+gem "mini_magick", "~> 4.11"
+
+# Used to count views
+gem "impressionist", "~> 2.0"
+
+gem "jquery-rails", "~> 4.4"
+
+# Allows for voting
+gem "acts_as_votable", "~> 0.13.1"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
