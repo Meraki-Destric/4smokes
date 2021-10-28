@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :games
   # Directs devise to use the registration controller
   devise_for :users, :controllers => { registrations: "registrations" }
   resources :posts
