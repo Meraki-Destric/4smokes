@@ -28,7 +28,7 @@ gem "jbuilder", "~> 2.7"
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", ">= 1.4.4", require: false
 gem "devise", "~> 4.8"
-
+gem "sqlite3", "~> 1.4"
 gem "simple_form", "~> 5.1"
 
 group :development, :test do
@@ -42,7 +42,6 @@ group :development do
   # Display performance information such as SQL time and flame graphs for each request in your browser.
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem "rack-mini-profiler", "~> 2.0"
-  gem "sqlite3", "~> 1.4"
 end
 
 group :production do
