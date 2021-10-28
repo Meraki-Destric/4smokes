@@ -37,6 +37,7 @@ class PostsController < ApplicationController
     end
   end
 
+  #test
   # PATCH/PUT /posts/1 or /posts/1.json
   def update
     respond_to do |format|
