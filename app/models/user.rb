@@ -5,5 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   # Essentially, if the user is destroyed, all associated data will be deleted as well
   has_many :posts, dependent: :destroy
-  has_many :hames, dependent: :destroy
+  has_many :games, dependent: :destroy
 end
