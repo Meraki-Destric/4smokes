@@ -11,14 +11,14 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 2021_10_28_190927) do
-
   create_table "games", force: :cascade do |t|
-    t.string "title"
+    t.text "image"
+    t.text "name"
     t.text "description"
-    t.integer "creator_id"
+    t.integer "rating"
+    t.integer "price"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "user_game"
   end
 
   create_table "posts", force: :cascade do |t|
@@ -42,5 +42,4 @@ ActiveRecord::Schema.define(version: 2021_10_28_190927) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["username"], name: "index_users_on_username", unique: true
   end
-
 end
